@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto HTML</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 800px; /* Ajusta el tamaño máximo de la galería */
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 300px; /* Ajusta el tamaño deseado de las imágenes */
+            height: 200px; /* Ajusta la altura según lo necesario */
+            margin: 10px; /* Espacio entre las imágenes */
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emanuel, el 10!!!</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/preferencias.html">Preferencias</a></li>
+                <li class="active"><a href="/audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 25px;">Galeria de imagenes del 10!!!</h2><hr>
+    <h2 style="text-align: center;">Video del ultimo cumple!!!</h2>
+    <div class="centrado">
+        
+        <video src="/assets/Manu2.mp4" controls autoplay muted width="100%" style="max-width: 800px;"></video>
+    </div>
+    <h2 style="text-align: center;">Algunas fotitos!!!</h2>
+    <div class="gallery">
+        <img src="/assets/444.jpg" alt="gato1">
+        <img src="/assets/555.jpg" alt="gato2">
+        <img src="/assets/333.jpg" alt="gato1">
+        <img src="/assets/222.jpg" alt="gato2">
+        <img src="/assets/111.jpg" alt="gato1">
+        <img src="/assets/aaa.jpg" alt="gato2">
+    </div>
+    <h2 style="text-align: center;">En el colegio con amigos!!!</h2>
+    <div class="centrado">
+        
+        <video src="/assets/colegio.mp4" controls autoplay muted width="80%" style="max-width: 500px;"></video>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos Reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
